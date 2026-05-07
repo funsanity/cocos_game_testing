@@ -211,7 +211,7 @@ PowerShell 下优先使用 `cocos.cmd`，避免直接执行 `cocos` 时触发脚
 
 ![每日签到 Cocos 编辑器效果](docs/images/signin-editor-result.png)
 
-功能也逻辑生成，可直接运行效果：
+功能逻辑也生成，后期替换美术资源即可。直接运行效果：
 
 ![每日签到 Cocos 运行效果](docs/images/ScreenShot_2026-05-07_183057_993.png)
 
