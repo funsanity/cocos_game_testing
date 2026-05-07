@@ -205,12 +205,13 @@ PowerShell 下优先使用 `cocos.cmd`，避免直接执行 `cocos` 时触发脚
 ```text
 按图创建一个模块窗口，功能需要对齐。
 ```
+![每日签到线框图](docs/images/signin-wireframe.png)
 
 效果参考：
 
 ![每日签到 Cocos 编辑器效果](docs/images/signin-editor-result.png)
 
-![每日签到线框图](docs/images/signin-wireframe.png)
+
 
 生成目标：
 
