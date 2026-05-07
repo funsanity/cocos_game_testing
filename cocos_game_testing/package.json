@@ -1,0 +1,14 @@
+{
+    "name": "my_game_name",
+    "type": "3d",
+    "version": "unknow",
+    "uuid": "025967f0-0f61-4f1f-874d-872079807831",
+    "creator": {
+        "version": "3.8.8"
+    },
+    "description": "",
+    "dependencies": {},
+    "devDependencies": {
+        "typescript": "5.4.5"
+    }
+}

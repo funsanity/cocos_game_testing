@@ -1,0 +1,226 @@
+{
+    "builder": {
+        "bundleConfig": {
+            "custom": {
+                "default": {
+                    "displayName": "i18n:builder.asset_bundle.defaultConfig",
+                    "configs": {
+                        "native": {
+                            "preferredOptions": {
+                                "isRemote": false,
+                                "compressionType": "merge_dep"
+                            }
+                        },
+                        "web": {
+                            "preferredOptions": {
+                                "isRemote": false,
+                                "compressionType": "merge_dep"
+                            },
+                            "fallbackOptions": {
+                                "compressionType": "merge_dep"
+                            }
+                        },
+                        "miniGame": {
+                            "fallbackOptions": {
+                                "isRemote": true,
+                                "compressionType": "merge_all_json"
+                            },
+                            "configMode": "overwrite",
+                            "overwriteSettings": {
+                                "wechatgame": {
+                                    "compressionType": "merge_all_json",
+                                    "isRemote": true
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "textureCompressConfig": {
+            "userPreset": {
+                "86uRq8K7NH5YJtKNDgFi4i": null,
+                "46zapoUD9CsJDX8b7v9DBR": null,
+                "3aVC+xyiZLYaxTqghTcjEz": {
+                    "name": "my_transparent_default",
+                    "options": {
+                        "web": {
+                            "astc_6x6": {
+                                "quality": "fast"
+                            },
+                            "png": {
+                                "quality": 80
+                            }
+                        },
+                        "miniGame": {
+                            "astc_6x6": {
+                                "quality": "fast"
+                            },
+                            "etc2_rgba": {
+                                "quality": "fast"
+                            },
+                            "png": {
+                                "quality": 80
+                            }
+                        }
+                    },
+                    "overwrite": {
+                        "wechatgame": {
+                            "astc_6x6": {
+                                "quality": "fast"
+                            },
+                            "etc2_rgba": {
+                                "quality": "fast"
+                            },
+                            "png": {
+                                "quality": 80
+                            }
+                        }
+                    }
+                },
+                "d3JOTa+/hE3LBnkVBPVcQP": null,
+                "7bsJFaANhD9ah0JLYvQLex": {
+                    "name": "my_opaque_default",
+                    "options": {
+                        "web": {
+                            "astc_6x6": {
+                                "quality": "fast"
+                            },
+                            "jpg": {
+                                "quality": 80
+                            }
+                        },
+                        "miniGame": {
+                            "astc_6x6": {
+                                "quality": "fast"
+                            },
+                            "etc2_rgb": {
+                                "quality": "fast"
+                            },
+                            "jpg": {
+                                "quality": 80
+                            }
+                        }
+                    },
+                    "overwrite": {
+                        "wechatgame": {
+                            "astc_6x6": {
+                                "quality": "fast"
+                            },
+                            "etc2_rgb": {
+                                "quality": "fast"
+                            },
+                            "jpg": {
+                                "quality": 80
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "splashScreen": {
+            "logo": {
+                "type": "none"
+            },
+            "background": {
+                "type": "custom",
+                "image": "project://settings/bigimg_bj1.jpg"
+            }
+        }
+    },
+    "engine": {
+        "macroConfig": {
+            "ENABLE_TRANSPARENT_CANVAS": true
+        },
+        "configs": {
+            "migrationsConfig": {
+                "flags": {
+                    "LOAD_SPINE_MANUALLY": false
+                },
+                "name": "迁移生成的配置",
+                "includeModules": [
+                    "2d",
+                    "animation",
+                    "audio",
+                    "base",
+                    "gfx-webgl",
+                    "gfx-webgl2",
+                    "graphics",
+                    "legacy-pipeline",
+                    "mask",
+                    "profiler",
+                    "rich-text",
+                    "skeletal-animation",
+                    "spine-3.8",
+                    "tween",
+                    "ui",
+                    "video"
+                ],
+                "noDeprecatedFeatures": {
+                    "value": false,
+                    "version": ""
+                }
+            }
+        },
+        "globalConfigKey": "migrationsConfig",
+        "designResolution": {
+            "width": 720,
+            "height": 1280,
+            "fitHeight": false,
+            "fitWidth": true
+        },
+        "physicsConfig": {
+            "collisionGroups": [
+                {
+                    "index": 1,
+                    "name": "cube"
+                },
+                {
+                    "index": 2,
+                    "name": "ground"
+                },
+                {
+                    "index": 3,
+                    "name": "pickCube"
+                }
+            ],
+            "collisionMatrix": {
+                "0": 1,
+                "1": 6,
+                "2": 2,
+                "3": 0
+            }
+        },
+        "customLayers": [
+            {
+                "name": "canvas_19",
+                "value": 524288
+            },
+            {
+                "name": "canvas_18",
+                "value": 262144
+            },
+            {
+                "name": "canvas_2",
+                "value": 4
+            },
+            {
+                "name": "canvas_scenetype",
+                "value": 8
+            },
+            {
+                "name": "UI_TOP_2D",
+                "value": 1
+            },
+            {
+                "name": "UI_WIN_2D",
+                "value": 2
+            }
+        ]
+    },
+    "script": {
+        "loose": true
+    },
+    "version": "1.0.0",
+    "$schema": "./temp/cli/cocos.config.schema.json"
+}

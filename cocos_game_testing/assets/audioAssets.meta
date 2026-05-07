@@ -1,0 +1,15 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "9ed772e7-8e93-493e-8ae3-173f119805c7",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleConfigID": "default",
+    "bundleName": "audioAssets",
+    "priority": 8,
+    "bundleFilterConfig": []
+  }
+}
