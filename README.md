@@ -1,11 +1,11 @@
-# Harness Cocos CLI 复杂大型游戏项目工作流测试 + Codex 实践
+# Harness Cocos CLI 复杂大型游戏项目工作流验证工程 + Codex 实践
 
 ![Node.js](https://img.shields.io/badge/Node.js-%3E%3D22.17.0-3C873A?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Cocos Creator](https://img.shields.io/badge/Cocos%20Creator-3.8.8-EF6C22?style=flat-square)
 ![cocos-cli](https://img.shields.io/badge/cocos--cli-0.0.1--alpha.22-2563EB?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-0B8ACB?style=flat-square)
 
-这是一个用于 GitHub 展示、AI Harness 认证、Cocos 项目实践测试和 Codex 开发流程验证的最小 Cocos Creator 3.8.8 + TypeScript 工程。它同时用来验证 Cocos MCP、文档级 RAG 检索链路、Agent 分层协作和大型游戏开发模型，但客户端运行时仍保持最小可启动范围。
+这是一个基于 Cocos CLI + TypeScript 的 AI Harness 最小客户端工程，用于验证 Codex / Agent 在CocosCreator 3.8.8游戏项目中的 AGENTS 路由、Skills 分层、RAG 检索、MCP 接入、Prefab/UI 、逻辑代码和数值表生成和 Planner-Generator-Evaluator 模块化检查闭环。客户端运行时只保留 Loading -> Game -> Welcome，用最小工程证明大型游戏 AI 协作开发流程。
 
 当前客户端只保留：
 
@@ -196,6 +196,22 @@ PowerShell 下优先使用 `cocos.cmd`，避免直接执行 `cocos` 时触发脚
 - 不提交 `node_modules`。
 - 不提交向量索引、embedding 缓存或数据库。
 
+使用链路：
+
+用户需求 / 图稿 / 功能说明
+        ↓
+AGENTS.md 路由
+        ↓
+RAG 检索 README / Skills / Overview / 代码
+        ↓
+Planner 制定计划
+        ↓
+Generator 生成 TS / Prefab / 资源
+        ↓
+Evaluator 检查路径 / 绑定 / 类型 / 启动链路
+        ↓
+Cocos Creator 运行验证
+
 ## 生成效果示例
 
 本工程包含一个用于验证 Codex + Harness + Cocos Prefab 生成链路的“每日签到”窗口示例。它从参考图和线框图出发，由 Agent 生成窗口模块、Prefab 结构、绑定字段和专用资源，并在 Cocos Creator 中验证可挂载、可检查、可迭代。
@@ -214,6 +230,17 @@ PowerShell 下优先使用 `cocos.cmd`，避免直接执行 `cocos` 时触发脚
 功能逻辑也生成，后期替换美术资源即可。直接运行效果：
 
 ![每日签到 Cocos 运行效果](docs/images/ScreenShot_2026-05-07_183057_993.png)
+
+示例提示词：
+
+```text
+按策划文案创建一个任务模块窗口和生成配置，按文档说明和参考图完成所有功能。
+```
+![任务系统参考图](docs/images/ScreenShot_2026-05-08_100349_331.png)
+
+效果参考：
+
+![任务系统生成配置](docs/images/ScreenShot_2026-05-08_100538_274.png)
 
 生成目标：
 

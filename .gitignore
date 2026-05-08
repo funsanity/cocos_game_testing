@@ -10,7 +10,6 @@ profiles/
 native
 build/
 build-templates/
-mahjong_game_server/
 toolp/
 temp/
 my/
@@ -25,10 +24,8 @@ doc/
 .gitignore
 config.toml
 .codex/config.toml
-skills/cocos-window-module/
-.codex/skills/cocos-window-module/
 cocos_game_testing/assets/script/funsan/
-cocos_game_testing/assets/audioAssets/sound/
+cocos_game_testing/assets/audioAssets/
 cocos_game_testing/settings/
 #//////////////////////////
 # NPM
