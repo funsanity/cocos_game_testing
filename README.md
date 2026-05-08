@@ -198,19 +198,21 @@ PowerShell 下优先使用 `cocos.cmd`，避免直接执行 `cocos` 时触发脚
 
 使用链路：
 
-用户需求 / 图稿 / 功能说明
-        ↓
-AGENTS.md 路由
-        ↓
-RAG 检索 README / Skills / Overview / 代码
-        ↓
-Planner 制定计划
-        ↓
-Generator 生成 TS / Prefab / 资源
-        ↓
-Evaluator 检查路径 / 绑定 / 类型 / 启动链路
-        ↓
-Cocos Creator 运行验证
+```text
+ -> 用户需求 / 图稿 / 功能说明
+ ->       ↓
+ -> AGENTS.md 路由
+ ->       ↓
+ -> RAG 检索 README / Skills / Overview / 代码
+ ->       ↓
+ -> Planner 制定计划
+ ->       ↓
+ -> Generator 生成 TS / Prefab / 资源
+ ->       ↓
+ -> Evaluator 检查路径 / 绑定 / 类型 / 启动链路
+ ->       ↓
+ -> Cocos Creator 运行验证
+```text
 
 ## 生成效果示例
 
