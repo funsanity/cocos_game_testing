@@ -1,4 +1,4 @@
-# Harness Cocos CLI 复杂大型游戏项目工作流验证工程 + Codex 实践
+# Harness Cocos CLI 游戏项目工作流验证工程 + Codex 实践
 
 ![Node.js](https://img.shields.io/badge/Node.js-%3E%3D22.17.0-3C873A?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Cocos Creator](https://img.shields.io/badge/Cocos%20Creator-3.8.8-EF6C22?style=flat-square)
