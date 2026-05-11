@@ -273,34 +273,11 @@ User Request / Artwork / Feature Brief
 
 以开放排行榜系统为例，传统开发需要手工写逻辑、搭 UI 预制体、绑定节点属性并反复检查，通常需要约 `3-7 天`。只有 AI 代码生成、但没有 Cocos CLI / Harness 时，逻辑代码可以较快生成，但 UI 预制体制作和核心属性挂载仍然麻烦，通常仍需要约 `1 天`。使用 Cocos CLI + Agent Harness 后，可以完成基础排版、核心属性挂载和逻辑生成，后期主要做资源对齐和代码检查，预计约 `1-3 小时`。
 
-```text
-Ranking System Development
-
-Traditional
-  Requirement
-    -> Manual TS Logic
-    -> Manual Prefab Layout
-    -> Manual Node Binding
-    -> Manual Debugging
-    -> 3-7 days
-
-AI Without Cocos CLI
-  Requirement
-    -> AI Generates TS Logic
-    -> Manual Prefab Layout
-    -> Manual Node Binding
-    -> Manual Cocos Verification
-    -> about 1 day
-
-Cocos CLI + Agent Harness
-  Requirement / Reference
-    -> AGENTS / Skills / Wiki Context
-    -> Cocos CLI Assisted Layout
-    -> Mounted Core Properties
-    -> Generated TS Logic
-    -> Resource Alignment + Code Review
-    -> about 1-3 hours
-```
+| 开发方式 | 主要流程 | 主要瓶颈 | 预计耗时 |
+| --- | --- | --- | --- |
+| 传统手工开发 | 需求理解 -> 手写 TS 逻辑 -> 手工搭 UI 预制体 -> 手工绑定节点属性 -> 手工调试 | 逻辑、Prefab、绑定和检查都依赖人工经验，重复劳动多 | `3-7 天` |
+| 有 AI 但无 Cocos CLI / Harness | 需求理解 -> AI 生成 TS 逻辑 -> 手工搭 UI 预制体 -> 手工绑定节点属性 -> Cocos 内检查 | 代码生成变快，但 UI 预制体制作、属性挂载和项目规则校验仍然慢 | 约 `1 天` |
+| Cocos CLI + Agent Harness | 需求/参考图 -> AGENTS / Skills / Wiki 上下文 -> Cocos CLI 辅助排版 -> 核心属性挂载 -> 逻辑生成 -> 资源对齐和代码检查 | 主要剩余工作是资源精修、视觉对齐和验收检查 | 约 `1-3 小时` |
 
 这个对比展示的是 Harness 的核心价值：把重复性的窗口结构、Prefab 绑定、框架规则读取和验证流程标准化，让 Agent 从“只会写代码”升级为“能生成可检查的 Cocos 模块”。
 
